@@ -1,4 +1,3 @@
-gpiobutton
-==========
+# gpiobutton
 
-get higher level button events from a gpio button
+## get higher level button events from a gpio button

@@ -94,6 +94,8 @@ regardless of when or whether the button is released.
 
 ```js
 button4.on("multipress", function(event) {
+  var presses = event.count;
+  // Button was pressed several times
 });
 ```
 

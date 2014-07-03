@@ -21,8 +21,17 @@ var buttonSpec = {gpiono:4};
 var button4 = new gpiobutton.button(buttonSpec);
 ```
 
-### API Methods
+The button's initialization spec includes the gpiono, which uses the
+same numbering scheme as the
+[gpio](https://www.npmjs.org/package/gpio) package.  It may also
+optionally include
 
+1. an "interval" property indicating the period (in milliseconds) of
+   polling.
+2. a "DOWN" property indicating which signal indicates the button
+   being down, or pressed.
+
+### API Methods
 
 ```js
 button4.deactivate();
@@ -93,7 +102,7 @@ as for example a double click on a mouse.  The event includes a
 "count" property indicating how many times the button was pressed.
 Finer-grained information about how long each press (and times between
 presses) can be found from the "wave" property of the event; each
-interval is described in terms of the number of "beats" the button
+button state is described in terms of the number of "beats" the button
 state lasted.  This package relies on the polling provided by the gpio
 package, so state changes occurring between polls are ignored.
 

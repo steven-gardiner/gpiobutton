@@ -6,6 +6,8 @@
   "repository": { "type": "git",
                   "url": "https://github.com/steven-gardiner/gpiobutton.git"
                 },
+  "bugs": { "url": "https://github.com/steven-gardiner/gpiobutton/issues" },
+  "license": "MIT", 
   "dependencies": {
     "gpio": "*"
   }

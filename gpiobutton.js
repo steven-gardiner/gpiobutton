@@ -36,6 +36,9 @@ gpiobutton.api.button = function(spec) {
   if (spec.interval) {
     self.config.interval = spec.interval;
   }
+  if (spec.longTimeout) {
+    self.config.longTimeout = spec.longTimeout;
+  }
 
   //console.error("CONFIG: %j -> %j", spec, self.config);
 
